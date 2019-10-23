@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Vue," />
 
 
 
@@ -86,18 +86,16 @@
 
 
 
-<meta name="description" content="前言&amp;ensp;&amp;ensp;iPhoneX 取消了物理按键，改成底部小黑条，这一改动导致网页出现了比较尴尬的屏幕适配问题。对于网页而言，顶部（刘海部位）的适配问题浏览器已经做了处理，所以我们只需要关注底部与小黑条的适配问题即可（即常见的吸底导航、返回顶部等各种相对底部 fixed 定位的元素）。">
+<meta name="description" content="通用">
+<meta name="keywords" content="Vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="H5适配iPhoneX">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;23&#x2F;H5%E9%80%82%E9%85%8DiPhoneX&#x2F;index.html">
+<meta property="og:title" content="vue移动端问题记录">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;23&#x2F;2019vue%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95&#x2F;index.html">
 <meta property="og:site_name" content="Oliver">
-<meta property="og:description" content="前言&amp;ensp;&amp;ensp;iPhoneX 取消了物理按键，改成底部小黑条，这一改动导致网页出现了比较尴尬的屏幕适配问题。对于网页而言，顶部（刘海部位）的适配问题浏览器已经做了处理，所以我们只需要关注底部与小黑条的适配问题即可（即常见的吸底导航、返回顶部等各种相对底部 fixed 定位的元素）。">
+<meta property="og:description" content="通用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https:&#x2F;&#x2F;user-gold-cdn.xitu.io&#x2F;2019&#x2F;9&#x2F;2&#x2F;16cf0da345561e8c?w=1000&amp;h=1000&amp;f=png&amp;s=121748">
-<meta property="og:image" content="https:&#x2F;&#x2F;user-gold-cdn.xitu.io&#x2F;2019&#x2F;9&#x2F;2&#x2F;16cf0b44836b8969?w=1594&amp;h=784&amp;f=png&amp;s=109849">
-<meta property="og:updated_time" content="2019-10-23T02:57:01.449Z">
+<meta property="og:updated_time" content="2019-10-23T05:40:03.104Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;user-gold-cdn.xitu.io&#x2F;2019&#x2F;9&#x2F;2&#x2F;16cf0da345561e8c?w=1000&amp;h=1000&amp;f=png&amp;s=121748">
 
 
 
@@ -127,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/23/H5适配iPhoneX/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/10/23/2019vue移动端问题记录/"/>
 
 
 
 
 
-  <title>H5适配iPhoneX | Oliver</title>
+  <title>vue移动端问题记录 | Oliver</title>
   
 
 
@@ -284,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/23/H5%E9%80%82%E9%85%8DiPhoneX/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/23/2019vue%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Oliver">
@@ -301,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">H5适配iPhoneX</h1>
+          <h1 class="post-title" itemprop="name headline">vue移动端问题记录</h1>
         
 
         <div class="post-meta">
@@ -313,7 +311,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-23T10:55:32+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-23T12:02:37+08:00">
                 2019-10-23
               </time>
             
@@ -356,93 +354,69 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&ensp;&ensp;<a href="http://www.yyyweb.com/tag/iphonex" target="_blank" rel="noopener">iPhoneX</a> 取消了物理按键，改成底部小黑条，这一改动导致网页出现了比较尴尬的屏幕适配问题。对于网页而言，顶部（刘海部位）的适配问题浏览器已经做了处理，所以我们只需要关注底部与小黑条的适配问题即可（即常见的吸底导航、返回顶部等各种相对底部 fixed 定位的元素）。</p>
-<a id="more"></a>
+        <h2 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h2><a id="more"></a>
 
-<p>&ensp;&ensp;笔者通过查阅了一些官方文档，以及结合实际项目中的一些处理经验，整理了一套简单的适配方案分享给大家，希望对大家有所帮助，以下是处理前后效果图：</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf0da345561e8c?w=1000&h=1000&f=png&s=121748" alt=" "></p>
-<p>&ensp;&ensp;大家都知道，iphoneX，屏幕顶部都有一个齐刘海，iPhoneX 取消了物理按键，改成底部小黑条，如果不做适配，这些地方就会被遮挡，因此本文讲述下齐刘海与底部小黑条的适配方法。</p>
-<h2 id="几个新概念"><a href="#几个新概念" class="headerlink" title="几个新概念"></a>几个新概念</h2><h3 id="安全区域"><a href="#安全区域" class="headerlink" title="安全区域"></a>安全区域</h3><p>&ensp;&ensp;安全区域指的是一个可视窗口范围，处于安全区域的内容不受圆角<font color=red>（corners）</font>、齐刘海<font color=red>（sensor housing）</font>、小黑条<font color=red>（Home Indicator）</font>影响，如下图所示：</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/9/2/16cf0b44836b8969?w=1594&h=784&f=png&s=109849" alt=" "></p>
-<h3 id="viewport-fit"><a href="#viewport-fit" class="headerlink" title="viewport-fit"></a>viewport-fit</h3><blockquote>
-<p>iOS11 新增特性，苹果公司为了适配 iPhoneX 对现有 <code>viewport meta</code> 标签的一个扩展，用于设置网页在可视窗口的布局方式，可设置 <font color=red><strong>三个值</strong></font>：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>auto</td>
-<td>默认值，跟 <code>contain</code> 表现一致。页面内容显示在safe area内。<code>viewprot-fit:auto</code>等同于<code>viewport-fit:contain</code></td>
-</tr>
-<tr>
-<td>contain</td>
-<td>可视窗口完全包含网页内容（左图）。页面内容显示在<code>safe area</code>内。<code>viewport-fit:contain</code></td>
-</tr>
-<tr>
-<td>cover</td>
-<td>网页内容完全覆盖可视窗口（右图）。页面内容充满屏幕。<code>viewport-fit:cover</code></td>
-</tr>
-</tbody></table>
-<h3 id="constant-函数"><a href="#constant-函数" class="headerlink" title="constant 函数"></a>constant 函数</h3><p>iOS11 新增特性，Webkit 的一个 CSS 函数，用于设定安全区域与边界的距离，有四个预定义的变量（单位是px）：</p>
-<ul>
-<li><code>safe-area-inset-left</code>：安全区域距离左边界距离</li>
-<li><code>safe-area-inset-right</code>：安全区域距离右边界距离</li>
-<li><code>safe-area-inset-top</code>：安全区域距离顶部边界距离</li>
-<li><code>safe-area-inset-bottom</code>：安全区域距离底部边界距离</li>
+<h3 id="移动端-300ms点击延迟的问题"><a href="#移动端-300ms点击延迟的问题" class="headerlink" title="(移动端)300ms点击延迟的问题"></a>(移动端)300ms点击延迟的问题</h3><ul>
+<li>安装fastclick库:  </li>
 </ul>
-<p><strong>注意</strong>：网页默认不添加扩展的表现是 viewport-fit=contain，需要适配 iPhoneX 必须设置 <font color=red>viewport-fit=cover</font>，不然 <code>constant</code> 函数是不起作用的，这是适配的必要条件。</p>
+<p><code>npm  install  fastclick --save</code></p>
 <ul>
-<li>官方文档中提到将来 <code>env()</code>要替换 <code>constant ()</code>，目前还不可用</li>
-<li>这两个函数都是 webkit 中 css 函数，可以直接使用变量函数，只有在 webkit 内核下才支持</li>
-<li><code>constant</code>：针对iOS &lt; 11.2以下系统 </li>
-<li><code>env</code>：针对于iOS &gt;= 11.2的系统</li>
+<li>在main.Js中写入：</li>
 </ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> fastClick <span class="keyword">from</span> <span class="string">'fastclick'</span></span><br><span class="line">fastClick.attach(<span class="built_in">document</span>.body)</span><br></pre></td></tr></table></figure>
+
+<h3 id="移动端-禁用放大缩小"><a href="#移动端-禁用放大缩小" class="headerlink" title="(移动端)禁用放大缩小"></a>(移动端)禁用放大缩小</h3><ul>
+<li><p>修改viewport</p>
+</li>
+<li><p>在 iOS 10之前，iOS 和 Android 都可以通过一行 meta 标签来禁止页面缩放：</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"</span> <span class="attr">name</span>=<span class="string">"viewport"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>iOS 10开始，meta 设置在 Safari 内无效</li>
+</ul>
+<p>iOS 有一组双指手势操作的事件：<code>gesturestart</code>、<code>gesturechange</code>、<code>gestureend</code></p>
+<ul>
+<li>完整禁止缩放代码</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 阻止双击放大</span></span><br><span class="line">    <span class="keyword">var</span> lastTouchEnd = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (event.touches.length &gt; <span class="number">1</span>) &#123;</span><br><span class="line">            event.preventDefault();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> now = (<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime();</span><br><span class="line">        <span class="keyword">if</span> (now - lastTouchEnd &lt;= <span class="number">300</span>) &#123;</span><br><span class="line">            event.preventDefault();</span><br><span class="line">        &#125;</span><br><span class="line">        lastTouchEnd = now;</span><br><span class="line">    &#125;, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 阻止双指放大</span></span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">'gesturestart'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">        event.preventDefault();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="引用iconfont的图标"><a href="#引用iconfont的图标" class="headerlink" title="引用iconfont的图标"></a>引用iconfont的图标</h3><ul>
+<li>首先在iconfont的官网创建一个项目，然后选择图标添加到项目中，然后使用Unicode下载,将解压出来的文件放入项目，需要的文件有：<code>iconfont.eot</code>, <code>iconfont.svg</code>, <code>iconfont.ttf</code>, <code>iconfont.woff</code> 以及<code>iconfont.css</code>文件</li>
+<li>在<code>iconfont.css</code>文件中修改以上四个文件的路径</li>
+<li>在<code>main.js</code>中导入<code>iconfont.css</code>文件</li>
+<li>在html中使用例子：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"iconfont "</span>&gt;</span>对应图标的unitcode编码<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="input默认调用九宫格数字键盘"><a href="#input默认调用九宫格数字键盘" class="headerlink" title="input默认调用九宫格数字键盘"></a>input默认调用九宫格数字键盘</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">pattern</span>=<span class="string">"\d*"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>注意：网页默认不添加扩展的表现是 <code>viewport-fit=contain</code>，需要适配 <code>iPhone</code> 必须设置<br><code>viewport-fit=cover</code>，<font color=red>这是适配的关键步骤</font>。</p>
+<p>安卓默认可以调出九宫格, 但ios需要加上pattern=”\d*”</p>
 </blockquote>
-<h2 id="适配例子"><a href="#适配例子" class="headerlink" title="适配例子"></a>适配例子</h2><p>第一步：设置网页在可视窗口的布局方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&apos;viewport&apos;  content=&quot;width=device-width, viewport-fit=cover&quot;  /&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h2><h3 id="iOS-H5交互"><a href="#iOS-H5交互" class="headerlink" title="iOS H5交互"></a>iOS H5交互</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 与 ios native  交互</span></span><br><span class="line"><span class="comment">  * payClick 定义的抛出给iOS交互的方法</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="built_in">window</span>.webkit.messageHandlers.payClick.postMessage(&#123;</span><br><span class="line">      money: <span class="keyword">this</span>.money</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(error);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>第二步：页面主体内容限定在安全区域内</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="comment">/* 适配齐刘海*/</span></span><br><span class="line">  <span class="attribute">padding-top</span>: <span class="built_in">constant</span>(safe-area-inset-top);  </span><br><span class="line"> <span class="comment">/* 适配底部黑条*/</span></span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="built_in">constant</span>(safe-area-inset-bottom);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="iOS-H5页面-上下滑动卡顿"><a href="#iOS-H5页面-上下滑动卡顿" class="headerlink" title="iOS H5页面 上下滑动卡顿"></a>iOS H5页面 上下滑动卡顿</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ios端微信h5页面上下滑动时卡顿 */</span></span><br><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>第三步：fixed 元素的适配</p>
-<ul>
-<li>bottom 不是0的情况</li>
+<h3 id="iOS-input存在重影边框问题"><a href="#iOS-input存在重影边框问题" class="headerlink" title="iOS input存在重影边框问题"></a>iOS input存在重影边框问题</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span> &#123;</span><br><span class="line">    <span class="attribute">outline</span>: none;</span><br><span class="line">    <span class="attribute">-webkit-appearance</span>: none;</span><br><span class="line">    <span class="attribute">-webkit-tap-highlight-color</span>: <span class="built_in">rgba</span>(0, 0, 0, 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="iOS-input光标过长"><a href="#iOS-input光标过长" class="headerlink" title="iOS input光标过长"></a>iOS input光标过长</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">不要给input加高度，加padding撑开就行了</span><br></pre></td></tr></table></figure>
+
+<h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><h3 id="安卓1px边框丢失"><a href="#安卓1px边框丢失" class="headerlink" title="安卓1px边框丢失"></a>安卓1px边框丢失</h3><ul>
+<li><code>:before</code> <code>:after</code> 和 <code>transform</code></li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* bottom 不是0的情况 */</span></span><br><span class="line"><span class="selector-class">.fixed</span> &#123;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="built_in">calc</span>(50px(原来的bottom值) + <span class="built_in">constant</span>(safe-area-inset-bottom));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>吸底的情况（bottom=0）</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 方法1 ：设置内边距 扩展高度*/</span></span><br><span class="line"><span class="comment">/* 这个方案需要吸底条必须是有背景色的，因为扩展的部分背景是跟随外容器的，否则出现镂空情况。*/</span></span><br><span class="line"><span class="selector-class">.fix</span> &#123;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="built_in">constant</span>(safe-area-inset-bottom);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 直接扩展高度*/</span></span><br><span class="line"><span class="selector-class">.fix</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="built_in">calc</span>(60px(原来的高度值) + <span class="built_in">constant</span>(safe-area-inset-bottom));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 方法2 ：在元素下面用一个空div填充， 但是背景色要一致 */</span></span><br><span class="line"><span class="selector-class">.blank</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="built_in">constant</span>(safe-area-inset-bottom);</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 吸底元素样式 */</span></span><br><span class="line"><span class="selector-class">.fix</span> &#123;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="built_in">constant</span>(safe-area-inset-bottom);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 一定要在改元素上设置position:relative,before内设置position: absolute */</span></span><br><span class="line"><span class="selector-class">.person-infos</span>&#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  &amp;::before&#123;</span><br><span class="line">    <span class="selector-tag">content</span>: "";</span><br><span class="line">    <span class="selector-tag">pointer-events</span>: <span class="selector-tag">none</span>; <span class="comment">/* 防止点击触发 */</span></span><br><span class="line">    <span class="selector-tag">box-sizing</span>: <span class="selector-tag">border-box</span>;</span><br><span class="line">    <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;</span><br><span class="line">    <span class="selector-tag">width</span>: 200%;</span><br><span class="line">    <span class="selector-tag">height</span>: 200%;</span><br><span class="line">    <span class="selector-tag">left</span>: 0;</span><br><span class="line">    <span class="selector-tag">top</span>: 0;</span><br><span class="line">    <span class="selector-tag">border-top</span><span class="selector-pseudo">:1px</span> <span class="selector-tag">solid</span> <span class="selector-id">#fff</span>;</span><br><span class="line">    <span class="selector-tag">transform</span><span class="selector-pseudo">:scale(0.5)</span>;</span><br><span class="line">    <span class="selector-tag">transform-origin</span>: 0 0;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>最后： 使用@supports</li>
+<li>给不兼容的加样式 如：<code>border-bottom: 1Px solid #ddd</code>;也可以完美的规避px2rem 的px向rem 的转化</li>
 </ul>
-<p>因为只有有齐刘海和底部黑条的机型才需要适配样式，可以用@support配合使用：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">supports</span> (bottom: constant(safe-area-inset-bottom)) &#123;</span><br><span class="line">  <span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="built_in">constant</span>(safe-area-inset-bottom);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="完整检测代码"><a href="#完整检测代码" class="headerlink" title="完整检测代码"></a>完整检测代码</h3><ul>
-<li><strong>@supports隔离兼容模式</strong></li>
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><h3 id="placeholder属性设置字体颜色"><a href="#placeholder属性设置字体颜色" class="headerlink" title="placeholder属性设置字体颜色"></a><code>placeholder</code>属性设置字体颜色</h3><ul>
+<li>兼容写法</li>
 </ul>
-<p>因为只有有齐刘海和底部黑条的机型才需要适配样式，可以用@support配合使用：</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@mixin</span> iphonex-css &#123;</span><br><span class="line">  <span class="attribute">padding-top</span>: constant(safe-area-inset-top); <span class="comment">//为导航栏+状态栏的高度 88px</span></span><br><span class="line">  <span class="attribute">padding-top</span>: env(safe-area-inset-top); <span class="comment">//为导航栏+状态栏的高度 88px</span></span><br><span class="line">  <span class="attribute">padding-left</span>: constant(safe-area-inset-left); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-left</span>: env(safe-area-inset-left); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-right</span>: constant(safe-area-inset-right); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-right</span>: env(safe-area-inset-right); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-bottom</span>: constant(safe-area-inset-bottom); <span class="comment">//为底下圆弧的高度 34px</span></span><br><span class="line">  <span class="attribute">padding-bottom</span>: env(safe-area-inset-bottom); <span class="comment">//为底下圆弧的高度 34px</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">@mixin</span> iphonex-support &#123;</span><br><span class="line">  <span class="keyword">@supports</span> (<span class="attribute">bottom</span>: constant(safe-area-inset-top)) or (<span class="attribute">bottom</span>: env(safe-area-inset-top)) &#123;</span><br><span class="line">    <span class="selector-tag">body</span><span class="selector-class">.iphonex</span> &#123;</span><br><span class="line">      <span class="variable">@include</span> iphonex-css;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* input */</span></span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::placeholder</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123;</span><br><span class="line">    <span class="comment">/* WebKit browsers */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-moz-placeholder</span> &#123;</span><br><span class="line">    <span class="comment">/* Mozilla Firefox 4 to 18 */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-moz-placeholder</span> &#123;</span><br><span class="line">    <span class="comment">/* Mozilla Firefox 19+ */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-ms-input-placeholder</span> &#123;</span><br><span class="line">    <span class="comment">/* Internet Explorer 10+ */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* textarea */</span></span><br><span class="line"><span class="selector-tag">textarea</span><span class="selector-pseudo">::placeholder</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">32px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="selector-tag">textarea</span><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123;</span><br><span class="line">  <span class="comment">/* WebKit browsers */</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#9c9c9c</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">textarea</span><span class="selector-pseudo">:-moz-placeholder</span> &#123;</span><br><span class="line">    <span class="comment">/* Mozilla Firefox 4 to 18 */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">32px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">textarea</span><span class="selector-pseudo">::-moz-placeholder</span> &#123;</span><br><span class="line">    <span class="comment">/* Mozilla Firefox 19+ */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">32px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">textarea</span><span class="selector-pseudo">::-ms-input-placeholder</span> &#123;</span><br><span class="line">    <span class="comment">/* Internet Explorer 10+ */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#666</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">32px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li><strong>@media 媒体查询</strong></li>
-</ul>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@mixin</span> iphonex-css &#123;</span><br><span class="line">  <span class="attribute">padding-top</span>: constant(safe-area-inset-top); <span class="comment">//为导航栏+状态栏的高度 88px</span></span><br><span class="line">  <span class="attribute">padding-top</span>: env(safe-area-inset-top); <span class="comment">//为导航栏+状态栏的高度 88px</span></span><br><span class="line">  <span class="attribute">padding-left</span>: constant(safe-area-inset-left); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-left</span>: env(safe-area-inset-left); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-right</span>: constant(safe-area-inset-right); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-right</span>: env(safe-area-inset-right); <span class="comment">//如果未竖屏时为0</span></span><br><span class="line">  <span class="attribute">padding-bottom</span>: constant(safe-area-inset-bottom); <span class="comment">//为底下圆弧的高度 34px</span></span><br><span class="line">  <span class="attribute">padding-bottom</span>: env(safe-area-inset-bottom); <span class="comment">//为底下圆弧的高度 34px</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* iphonex 适配 */</span></span><br><span class="line"><span class="variable">@mixin</span> iphonex-media &#123;</span><br><span class="line">  <span class="keyword">@media</span> only screen and (<span class="attribute">device-width</span>: <span class="number">375px</span>) and (<span class="attribute">device-height</span>: <span class="number">812px</span>) and (<span class="attribute">-webkit-device-pixel-ratio</span>: <span class="number">3</span>) &#123;</span><br><span class="line">    <span class="selector-tag">body</span><span class="selector-class">.iphonex</span> &#123;</span><br><span class="line">      <span class="variable">@include</span> iphonex-css;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="注意项"><a href="#注意项" class="headerlink" title="注意项"></a>注意项</h3><ul>
-<li>&ensp;&ensp;<code>env</code> 和 <code>constant</code> 只有在 <code>viewport-fit=cover</code> 时候才能生效, 上面使用的safari 的控制台可以检测模拟器中网页开启web inspector.</li>
-</ul>
-
+<h2 id="未完待更新…（此篇仅做个人记录）"><a href="#未完待更新…（此篇仅做个人记录）" class="headerlink" title="未完待更新…（此篇仅做个人记录）"></a>未完待更新…（此篇仅做个人记录）</h2>
       
     </div>
     
@@ -467,6 +441,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Vue/" rel="tag"><i class="fa fa-tag"></i> Vue</a>
+          
+        </div>
+      
 
       
       
@@ -476,15 +456,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/23/Tue%20Oct%2022%202019%2016:09:13%20GMT+0800%20(CST)/" rel="next" title="page">
-                <i class="fa fa-chevron-left"></i> page
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/10/23/2019Hexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" rel="prev" title="Hexo+Next主题优化">
+                Hexo+Next主题优化 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -565,7 +545,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -577,10 +557,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
+                
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
-                </a>
+                
               </div>
             
 
@@ -627,7 +607,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几个新概念"><span class="nav-number">2.</span> <span class="nav-text">几个新概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安全区域"><span class="nav-number">2.1.</span> <span class="nav-text">安全区域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#viewport-fit"><span class="nav-number">2.2.</span> <span class="nav-text">viewport-fit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#constant-函数"><span class="nav-number">2.3.</span> <span class="nav-text">constant 函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#适配例子"><span class="nav-number">3.</span> <span class="nav-text">适配例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#完整检测代码"><span class="nav-number">3.1.</span> <span class="nav-text">完整检测代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补充"><span class="nav-number">4.</span> <span class="nav-text">补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注意项"><span class="nav-number">4.1.</span> <span class="nav-text">注意项</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#通用"><span class="nav-number">1.</span> <span class="nav-text">通用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#移动端-300ms点击延迟的问题"><span class="nav-number">1.1.</span> <span class="nav-text">(移动端)300ms点击延迟的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#移动端-禁用放大缩小"><span class="nav-number">1.2.</span> <span class="nav-text">(移动端)禁用放大缩小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用iconfont的图标"><span class="nav-number">1.3.</span> <span class="nav-text">引用iconfont的图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#input默认调用九宫格数字键盘"><span class="nav-number">1.4.</span> <span class="nav-text">input默认调用九宫格数字键盘</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS"><span class="nav-number">2.</span> <span class="nav-text">iOS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-H5交互"><span class="nav-number">2.1.</span> <span class="nav-text">iOS H5交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-H5页面-上下滑动卡顿"><span class="nav-number">2.2.</span> <span class="nav-text">iOS H5页面 上下滑动卡顿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-input存在重影边框问题"><span class="nav-number">2.3.</span> <span class="nav-text">iOS input存在重影边框问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-input光标过长"><span class="nav-number">2.4.</span> <span class="nav-text">iOS input光标过长</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android"><span class="nav-number">3.</span> <span class="nav-text">Android</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安卓1px边框丢失"><span class="nav-number">3.1.</span> <span class="nav-text">安卓1px边框丢失</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样式"><span class="nav-number">4.</span> <span class="nav-text">样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#placeholder属性设置字体颜色"><span class="nav-number">4.1.</span> <span class="nav-text">placeholder属性设置字体颜色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未完待更新…（此篇仅做个人记录）"><span class="nav-number">5.</span> <span class="nav-text">未完待更新…（此篇仅做个人记录）</span></a></li></ol></div>
             
 
           </div>
@@ -697,7 +677,7 @@ setInterval("createtime()",250);
 </script>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3.1k字</span>
+  <span class="post-count">博客全站共4.4k字</span>
 </div>
         
 <div class="busuanzi-count">
