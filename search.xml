@@ -3,7 +3,7 @@
   <entry>
     <title>Hexo搭建教程（Mac版）</title>
     <url>/2019/10/23/2019Hexo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88Mac%E7%89%88%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="Hexo搭建…1"><a href="#Hexo搭建…1" class="headerlink" title="Hexo搭建…1"></a>Hexo搭建…1</h2><a id="more"></a>
+    <content><![CDATA[<h2 id="Hexo搭建"><a href="#Hexo搭建" class="headerlink" title="Hexo搭建"></a>Hexo搭建</h2><a id="more"></a>
 
 <h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>打开 Node （中文官网）Node（英文官网）<br>（此处打开的是英文官网）<br>安装步骤非常简单，一直next，下一步就可以了，默认安装就行。</p>
 <h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p>打开 Git 官网<br>（此处下载的为Mac OS X版本，Windows同理）<br>安装步骤也依旧非常简单，一直下一步。默认安装就行了</p>
@@ -16,7 +16,7 @@
 <h2 id="二-部署（GitHub）"><a href="#二-部署（GitHub）" class="headerlink" title="二, 部署（GitHub）"></a>二, 部署（GitHub）</h2><h3 id="打开GitHub"><a href="#打开GitHub" class="headerlink" title="打开GitHub"></a>打开GitHub</h3><h3 id="新建一个GitHub仓库项目"><a href="#新建一个GitHub仓库项目" class="headerlink" title="新建一个GitHub仓库项目"></a>新建一个GitHub仓库项目</h3><h3 id="用户部署个人博客的GitHub仓库的命名必须符合特定要求才行（昵称用户名一致）（oliver556-github-io）"><a href="#用户部署个人博客的GitHub仓库的命名必须符合特定要求才行（昵称用户名一致）（oliver556-github-io）" class="headerlink" title="用户部署个人博客的GitHub仓库的命名必须符合特定要求才行（昵称用户名一致）（oliver556.github.io）"></a>用户部署个人博客的GitHub仓库的命名必须符合特定要求才行（昵称用户名一致）（oliver556.github.io）</h3><h3 id="git部署插件"><a href="#git部署插件" class="headerlink" title="git部署插件"></a>git部署插件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
 <h3 id="进入hexo-的-config-yml文件夹"><a href="#进入hexo-的-config-yml文件夹" class="headerlink" title="进入hexo 的 _config.yml文件夹"></a>进入hexo 的 _config.yml文件夹</h3><p>找到# Deployment</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Deployment</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Docs: https://hexo.io/docs/deployment.html</span></span></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/oliver556/oliver556.github.io.git #仓库地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:<span class="comment">//github.com/oliver556/oliver556.github.io.git #仓库地址</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
 <h3 id="hexo-d（部署，上传到服务器）"><a href="#hexo-d（部署，上传到服务器）" class="headerlink" title="hexo d（部署，上传到服务器）"></a>hexo d（部署，上传到服务器）</h3><p>输入自己的GitHub账号，密码（即可完成）</p>
 <h2 id="三-自定义主题"><a href="#三-自定义主题" class="headerlink" title="三, 自定义主题"></a>三, 自定义主题</h2><h3 id="yilia主题-GitHub上用的人比较多的一个主题"><a href="#yilia主题-GitHub上用的人比较多的一个主题" class="headerlink" title="yilia主题 GitHub上用的人比较多的一个主题"></a>yilia主题 GitHub上用的人比较多的一个主题</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">1. # 安装下载主题</span><br><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br><span class="line">2. 修改hexo根目录下的 _config.yml ： theme: yilia</span><br><span class="line">3. hexo clean</span><br><span class="line">4. hexo g</span><br><span class="line">5. hexo s</span><br><span class="line">6. hexo d</span><br></pre></td></tr></table></figure>
@@ -29,7 +29,7 @@
 <h3 id="配置阿里云域名解析"><a href="#配置阿里云域名解析" class="headerlink" title="配置阿里云域名解析"></a>配置阿里云域名解析</h3><p>进入你的阿里云的解析域名列表，选择你想要解析的域名，点击后面的解析。如下图所示：<br><img src="https://cdn.nlark.com/yuque/0/2019/png/283395/1571709968740-b6e55bb3-044b-4d68-be15-7bc539f52617.png?x-oss-process=image/resize,w_746" alt=" "></p>
 <p>然后点击添加解析，因为我的ip地址是151.101.100.133，所以我添加了两条解析记录。如下图所示：<br><img src="https://cdn.nlark.com/yuque/0/2019/png/283395/1571709984673-c5f8ff62-a518-4f87-b65a-f213348328df.png?x-oss-process=image/resize,w_746" alt=" "></p>
 <h3 id="配置github-pages的custom-domain"><a href="#配置github-pages的custom-domain" class="headerlink" title="配置github pages的custom domain"></a>配置github pages的custom domain</h3><p>进入你的github pages的仓库，然后在设置里面将的你的域名的地址，添加到custom domain中，然后保存即可。如下图所示：<br><img src="https://cdn.nlark.com/yuque/0/2019/png/283395/1571710004690-3c267fc2-d008-4e95-9c99-b415b9925e6b.png?x-oss-process=image/resize,w_746" alt=" "></p>
-<p>设置到这个地方，你现在访问你的域名地址，比如我的是<a href="http://www.huyuee.com。就能看到你的github" target="_blank" rel="noopener">www.huyuee.com。就能看到你的github</a> pages了！</p>
+<p>设置到这个地方，你现在访问你的域名地址，比如我的是 <code>www.huyuee.com</code> 。就能看到你的github pages了！</p>
 <p>连接Github与本地</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name "oliver556"</span><br><span class="line">git config --global user.email "oliver556@163.com"</span><br></pre></td></tr></table></figure>
 
