@@ -19,6 +19,8 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-.min.css?v=1.0.2">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
 
 
 <script id="hexo-configurations">
@@ -78,7 +80,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;png&#x2F;283395&#x2F;1571756780504-36d7be25-03bf-4de1-b40f-8d819afe9c05.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;283395&#x2F;1571793792282-26ead7e4-5c14-440c-8e4c-0c8b7ad6db78.jpeg">
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;png&#x2F;283395&#x2F;1571795773417-c369fe26-630c-4565-b290-cd5493e664ea.png">
-<meta property="og:updated_time" content="2019-10-23T06:20:51.810Z">
+<meta property="og:updated_time" content="2019-10-24T08:52:50.574Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;283395&#x2F;1571747396476-36857ada-9940-473b-b1fc-281c05ccf45b.jpeg?x-oss-process=image&#x2F;resize,w_746">
   <link rel="canonical" href="http://aligoogle.net/2019/10/23/2019Hexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/">
@@ -296,11 +298,19 @@
                 
               
 
-              <time title="创建时间：2019-10-23 12:03:21 / 修改时间：14:20:51" itemprop="dateCreated datePublished" datetime="2019-10-23T12:03:21+08:00">2019-10-23</time>
+              <time title="创建时间：2019-10-23 12:03:21" itemprop="dateCreated datePublished" datetime="2019-10-23T12:03:21+08:00">2019-10-23</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-24 16:52:50" itemprop="dateModified" datetime="2019-10-24T16:52:50+08:00">2019-10-24</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -721,7 +731,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -841,7 +851,7 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        
+        <div style="text-align: center">
 
 <div class="copyright">
   &copy; 
@@ -850,22 +860,35 @@
     <i class="fa fa-heart" aria-hidden="true"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Oliver</span>
-</div>
-  <!-- <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
-  </div> -->
 
-<!--
-  <span class="post-meta-divider">|</span> -->
+  <span class="post-meta-divider">|</span>
+
   <div class="theme-info">
-    <!--
-      
-     -->主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.2
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"> 站点字数合计: &nbsp;</i>6.5k
+    </span>
   </div>
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.4k字</span>
 </div>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+</div>
+<script>
+  var now = new Date(); 
+  function createtime() { 
+    var grt= new Date("10/22/2019 08:30:00");//此处修改你的建站时间或者网站上线时间 
+    now.setTime(now.getTime()+250); 
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+    document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+  } 
+setInterval("createtime()",250);
+</script>
+
         
 
 
