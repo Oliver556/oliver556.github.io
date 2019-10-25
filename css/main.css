@@ -158,7 +158,7 @@ body {
   background: #fff;
   color: #555;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -180,22 +180,22 @@ h6 {
   padding: 0;
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 22px;
 }
 h2 {
-  font-size: 1.375em;
+  font-size: 20px;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 18px;
 }
 h4 {
-  font-size: 1.125em;
+  font-size: 16px;
 }
 h5 {
-  font-size: 1em;
+  font-size: 14px;
 }
 h6 {
-  font-size: 0.875em;
+  font-size: 12px;
 }
 p {
   margin: 0 0 20px 0;
@@ -264,7 +264,7 @@ kbd {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 0.875em;
+  font-size: 12px;
   margin: 0 0 20px 0;
   width: 100%;
 }
@@ -300,7 +300,7 @@ td {
   border-radius: 0;
   color: #555;
   display: inline-block;
-  font-size: 0.875em;
+  font-size: 12px;
   line-height: 2;
   padding: 0 20px;
   text-decoration: none;
@@ -364,8 +364,8 @@ td {
 }
 pre,
 .highlight {
-  background: #f7f7f7;
-  color: #4d4d4c;
+  background: #262626;
+  color: #9e9e9e;
   line-height: 1.6;
   margin: 0 auto 20px;
 }
@@ -387,13 +387,13 @@ pre {
 }
 pre code {
   background: none;
-  color: #4d4d4c;
-  font-size: 0.875em;
+  color: #9e9e9e;
+  font-size: 12px;
   padding: 0;
   text-shadow: none;
 }
 .highlight *::selection {
-  background: #d6d6d6;
+  background: #303030;
 }
 .highlight pre {
   border: 0;
@@ -411,7 +411,7 @@ pre code {
 }
 .highlight figcaption {
   background: #eee;
-  color: #4d4d4c;
+  color: #9e9e9e;
   line-height: 1em;
   margin: 0;
   padding: 0.5em;
@@ -425,21 +425,21 @@ pre code {
   clear: both;
 }
 .highlight figcaption a {
-  color: #4d4d4c;
+  color: #9e9e9e;
   float: right;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #4d4d4c;
+  border-bottom-color: #9e9e9e;
 }
 .highlight .gutter pre {
-  background: #eff2f3;
-  color: #869194;
+  background: #262626;
+  color: #6a6a6a;
   padding-left: 10px;
   padding-right: 10px;
   text-align: right;
 }
 .highlight .code pre {
-  background: #f7f7f7;
+  background: #262626;
   padding-left: 10px;
   width: 100%;
 }
@@ -456,20 +456,20 @@ pre code {
   border: 0;
 }
 pre .deletion {
-  background: #fdd;
+  background: #800000;
 }
 pre .addition {
-  background: #dfd;
+  background: #008000;
 }
 pre .meta {
-  color: #eab700;
+  color: #a68f01;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 pre .comment {
-  color: #8e908c;
+  color: #6a6a6a;
 }
 pre .variable,
 pre .attribute,
@@ -484,7 +484,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #ff511a;
 }
 pre .number,
 pre .preprocessor,
@@ -494,7 +494,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f5871f;
+  color: #dd7202;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -507,11 +507,11 @@ pre .ruby .symbol,
 pre .xml .cdata,
 pre .special,
 pre .formula {
-  color: #718c00;
+  color: #4ca340;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #07a38f;
 }
 pre .function,
 pre .python .decorator,
@@ -521,11 +521,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #3294ff;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #cc62fe;
 }
 .blockquote-center {
   border-left: none;
@@ -946,7 +946,7 @@ pre .javascript .function {
   border-bottom: none;
   color: #222;
   display: inline-block;
-  line-height: 1.375em;
+  line-height: $font-size-largest;
   padding: 0 40px;
   position: relative;
 }
@@ -956,14 +956,14 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1.375em;
+  font-size: $font-size-largest;
   font-weight: normal;
   line-height: 1.5;
   vertical-align: top;
 }
 .site-subtitle {
   color: #999;
-  font-size: 0.8125em;
+  font-size: 10px;
   margin-top: 10px;
 }
 .use-motion .brand {
@@ -1031,7 +1031,7 @@ pre .javascript .function {
 .menu-item span.exturl {
   border-bottom: 0;
   display: block;
-  font-size: 0.8125em;
+  font-size: 10px;
   transition-property: border-color;
   transition-delay: 0s;
   transition-duration: 0.2s;
@@ -1133,7 +1133,7 @@ pre .javascript .function {
 }
 .site-description {
   color: #999;
-  font-size: 1em;
+  font-size: $font-size-medium;
   margin-top: 5px;
   text-align: center;
 }
@@ -1144,7 +1144,7 @@ pre .javascript .function {
 .links-of-author span.exturl {
   border-bottom-color: #555;
   display: inline-block;
-  font-size: 0.8125em;
+  font-size: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
   vertical-align: middle;
@@ -1154,7 +1154,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b16178;
+  background: #0eb8ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1190,11 +1190,11 @@ pre .javascript .function {
   color: #fff;
 }
 .links-of-blogroll {
-  font-size: 0.8125em;
+  font-size: 10px;
   margin-top: 10px;
 }
 .links-of-blogroll-title {
-  font-size: 0.875em;
+  font-size: 12px;
   font-weight: 600;
   margin-top: 0;
 }
@@ -1247,7 +1247,7 @@ pre .javascript .function {
   color: #555;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.875em;
+  font-size: 12px;
 }
 .sidebar-nav li.sidebar-nav-overview {
   margin-left: 10px;
@@ -1294,7 +1294,7 @@ pre .javascript .function {
   overflow-y: auto;
 }
 .post-toc {
-  font-size: 0.875em;
+  font-size: 12px;
 }
 .post-toc ol {
   list-style: none;
@@ -1366,17 +1366,17 @@ pre .javascript .function {
 .site-state-item-count {
   color: inherit;
   display: block;
-  font-size: 1.25em;
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
 .site-state-item-name {
   color: inherit;
-  font-size: 0.875em;
+  font-size: 12px;
 }
 .footer {
   color: #999;
-  font-size: 0.875em;
+  font-size: 12px;
   padding: 20px 0;
 }
 .footer.footer-fixed {
@@ -1507,17 +1507,17 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .post-body {
-    font-size: 1.125em;
+    font-size: 16px;
   }
 }
 .post-body span.exturl .fa {
-  font-size: 0.875em;
+  font-size: 12px;
   margin-left: 4px;
 }
 .post-body .image-caption,
 .post-body .figure .caption {
   color: #999;
-  font-size: 0.875em;
+  font-size: 12px;
   font-weight: bold;
   line-height: 1;
   margin: -20px auto 15px;
@@ -1556,7 +1556,7 @@ pre .javascript .function {
   }
 }
 .posts-collapse .collection-title {
-  font-size: 1.125em;
+  font-size: 16px;
   position: relative;
 }
 .posts-collapse .collection-title::before {
@@ -1615,7 +1615,7 @@ pre .javascript .function {
   left: 0;
   margin-left: -4px;
   position: absolute;
-  top: 0.75em;
+  top: $font-size-smallest;
   transition-property: background;
   width: 6px;
   transition-delay: 0s;
@@ -1630,12 +1630,12 @@ pre .javascript .function {
 }
 .posts-collapse .post-meta {
   display: inline;
-  font-size: 0.75em;
+  font-size: $font-size-smallest;
   margin-right: 10px;
 }
 .posts-collapse .post-title {
   display: inline;
-  font-size: 1em;
+  font-size: $font-size-medium;
   font-weight: normal;
   margin-bottom: 0;
   margin-top: 0;
@@ -1656,7 +1656,7 @@ pre .javascript .function {
   width: 4px;
 }
 .posts-collapse .fa-external-link {
-  font-size: 0.875em;
+  font-size: 12px;
   margin-left: 5px;
 }
 .post-eof {
@@ -1773,7 +1773,7 @@ pre .javascript .function {
   display: table-row;
 }
 .posts-expand .post-header {
-  font-size: 1.125em;
+  font-size: 16px;
 }
 .posts-expand .post-title {
   overflow-wrap: break-word;
@@ -1808,18 +1808,18 @@ pre .javascript .function {
   visibility: visible;
 }
 .posts-expand .post-title-link .fa {
-  font-size: 0.875em;
+  font-size: 12px;
   margin-left: 5px;
 }
 .posts-expand .post-meta {
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 0.75em;
+  font-size: $font-size-smallest;
   margin: 3px 0 60px 0;
   text-align: center;
 }
 .posts-expand .post-meta .post-description {
-  font-size: 0.875em;
+  font-size: 12px;
   margin-top: 2px;
 }
 .posts-expand .post-meta time {
@@ -1866,7 +1866,7 @@ pre .javascript .function {
   border-bottom: none;
   color: #555;
   display: block;
-  font-size: 0.875em;
+  font-size: 12px;
   line-height: 1.6;
   position: relative;
 }
@@ -1878,7 +1878,7 @@ pre .javascript .function {
   top: 2px;
 }
 .post-nav-item .fa {
-  font-size: 0.75em;
+  font-size: $font-size-smallest;
   margin-right: 5px;
 }
 .post-nav-next a {
@@ -1916,7 +1916,7 @@ pre .javascript .function {
 }
 .post-tags a {
   display: inline-block;
-  font-size: 0.8125em;
+  font-size: 10px;
 }
 .post-tags a:not(:last-child) {
   margin-right: 10px;
@@ -1935,7 +1935,7 @@ pre .javascript .function {
 }
 .social-like {
   display: flex;
-  font-size: 0.875em;
+  font-size: 12px;
   justify-content: center;
   text-align: center;
 }
@@ -2157,7 +2157,7 @@ pre .javascript .function {
   }
 }
 ul.breadcrumb {
-  font-size: 0.75em;
+  font-size: $font-size-smallest;
   list-style: none;
   margin: 1em 0;
   padding: 0 2em;
@@ -2503,7 +2503,7 @@ hr {
   background: none;
   border: 0;
   border-bottom: 2px solid #666;
-  font-size: 0.875em;
+  font-size: 12px;
   padding: 0;
   transition-property: border;
 }
